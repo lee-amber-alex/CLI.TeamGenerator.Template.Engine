@@ -53,93 +53,94 @@ const managerBuild = () =>
     ])
     .then((response) => {
       teamInfo.push(response);
-      
+
       console.log(teamInfo);
       if (response.teammember === "Engineer") {
         engineerBuild();
-      };
+      }
       if (response.teammember === "Intern") {
         internBuild();
-      };
-
+      }
     });
 
 managerBuild();
 
 const engineerBuild = () =>
-  inquirer.prompt([
-    {
-      type: "input",
-      message: "What is the engineer's name?",
-      name: "engineer",
-    },
-    {
-      type: "input",
-      message: "What is the engineer's ID?",
-      name: "engineerId",
-    },
-    {
-      type: "input",
-      message: "What is the engineer's email?",
-      name: "engineerEmail",
-      validate: function (answer) {
-        if (answer.includes(" ")) {
-          return "Please provide a valid email address.";
-        } else {
-          return true;
-        }
+  inquirer
+    .prompt([
+      {
+        type: "input",
+        message: "What is the engineer's name?",
+        name: "engineer",
       },
-    },
-    {
-      type: "input",
-      message: "What is the Employee GitHub username?",
-      name: "gitHub",
-      validate: function (answer) {
-        if (answer.includes(" ")) {
-          return "Please provide a valid username.  Make sure username doesn't include spaces.";
-        } else {
-          return true;
-        }
+      {
+        type: "input",
+        message: "What is the engineer's ID?",
+        name: "engineerId",
       },
-    },
-  ]).then((responseEngineer) => {
-    teamInfo.push(responseEngineer);
-    console.log(teamInfo);
-
-});
-
+      {
+        type: "input",
+        message: "What is the engineer's email?",
+        name: "engineerEmail",
+        validate: function (answer) {
+          if (answer.includes(" ")) {
+            return "Please provide a valid email address.";
+          } else {
+            return true;
+          }
+        },
+      },
+      {
+        type: "input",
+        message: "What is the Employee GitHub username?",
+        name: "gitHub",
+        validate: function (answer) {
+          if (answer.includes(" ")) {
+            return "Please provide a valid username.  Make sure username doesn't include spaces.";
+          } else {
+            return true;
+          }
+        },
+      },
+    ])
+    .then((responseEngineer) => {
+      teamInfo.push(responseEngineer);
+      console.log(teamInfo);
+    });
 const internBuild = () =>
-  inquirer.prompt([
-    {
-      type: "input",
-      message: "What is the intern's name?",
-      name: "intern",
-    },
-    {
-      type: "input",
-      message: "What is the intern's ID?",
-      name: "interId",
-    },
-    {
-      type: "input",
-      message: "What is the intern's email?",
-      name: "internEmail",
-      validate: function (answer) {
-        if (answer.includes(" ")) {
-          return "Please provide a valid email address.";
-        } else {
-          return true;
-        }
+  inquirer
+    .prompt([
+      {
+        type: "input",
+        message: "What is the intern's name?",
+        name: "intern",
       },
-    },
-    {
-      type: "input",
-      message: " What is the Intern's School name?",
-      name: "school",
-    },
-  ]).then((responseIntern) => {
-    teamInfo.push(responseIntern);
-});
+      {
+        type: "input",
+        message: "What is the intern's ID?",
+        name: "interId",
+      },
+      {
+        type: "input",
+        message: "What is the intern's email?",
+        name: "internEmail",
+        validate: function (answer) {
+          if (answer.includes(" ")) {
+            return "Please provide a valid email address.";
+          } else {
+            return true;
+          }
+        },
+      },
+      {
+        type: "input",
+        message: " What is the Intern's School name?",
+        name: "school",
+      },
+    ])
+    .then((responseIntern) => {
+      teamInfo.push(responseIntern);
+    });
 
 // After the user has input all employees desired, call the `render` function (required
 // above) and pass in an array containing all employee objects; the `render` function will

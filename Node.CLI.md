@@ -46,6 +46,9 @@ The dependencies are, [jest](https://jestjs.io/) for running the provided tests,
 and [inquirer](https://www.npmjs.com/package/inquirer) for collecting input from the user.
 
 There are also unit tests to help you build the classes necessary.
+____________________________________________________________________________________________________________
+
+1)
 
 It is recommended that you follow this workflow:
 
@@ -54,6 +57,9 @@ It is recommended that you follow this workflow:
 3. Repeat
 
 🎗 Remember, you can run the tests at any time with `npm run test`
+_____________________________________________________________________________________________________________
+
+2)
 
 It is recommended that you start with a directory structure that looks like this:
 
@@ -68,6 +74,9 @@ test/          // jest tests
   Manager.test.js
 app.js         // Runs the application
 ```
+_____________________________________________________________________________________________________________
+
+3)
 
 ### Hints
 
@@ -90,6 +99,9 @@ of `Employee`.
 
 * In your HTML template files, you may want to add a placeholder character that helps your program 
 identify where the dynamic markup begins and ends.
+_________________________________________________________________________________________________________________
+
+
 
 ## Minimum Requirements
 
@@ -100,6 +112,10 @@ identify where the dynamic markup begins and ends.
 * User can use the CLI to generate an HTML page that displays information about their team.
 
 * All tests must pass.
+
+__________________________________________________________________________________________________________________
+
+4)
 
 ### Classes
 The project must have the these classes: `Employee`, `Manager`, `Engineer`,
@@ -139,11 +155,18 @@ In addition to `Employee`'s properties and methods, `Intern` will also have:
   * getSchool()
 
   * getRole() // Overridden to return 'Intern'
+__________________________________________________________________________________________________________________
+
+5)
 
 ### User input
 
 The project must prompt the user to build an engineering team. An engineering
 team consists of a manager, and any number of engineers and interns.
+
+_________________________________________________________________________________________________________________
+
+6)
 
 ### Roster output
 
@@ -157,6 +180,10 @@ nicely formatted team roster. Each team member should display the following in n
   * ID
 
   * Role-specific property (School, link to GitHub profile, or office number)
+
+__________________________________________________________________________________________________________________
+
+7)
 
 ## Bonus
 
