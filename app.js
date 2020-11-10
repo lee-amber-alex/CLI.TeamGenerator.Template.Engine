@@ -48,7 +48,6 @@ const employeeBuild = () => {
         name: "name",
       },
       {
-        // needs to be a different ID for each employee.
         type: "input",
         message: "What is the employee's ID?",
         name: "id",

@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+#body-bg {
+    background-image: url("img/body.bg2.jpg") !important;
+}
+
+#header-bg {
+
+    background-color: rgba(169, 169, 169, 0.509);
+}
+
+.h1, h1 {
+    font-size: 4.5rem !important;
+    text-shadow: 2px 2px 5px white;
+    color: rgba(31, 29, 29, 0.906);
+}
+
+#employee-M {
+    background-color: rgba(173, 216, 230, 0.488) !important;
+}
+
+#employee-E {
+    background-color: rgba(255, 166, 0, 0.488) !important;
+}
+
+#employee-I {
+    background-color: rgba(144, 238, 144, 0.488) !important;
+}
