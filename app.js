@@ -32,7 +32,6 @@ const addEmployee = () => {
         const teamOutput = render(teamInfo);
         fs.writeFile(outputPath, teamOutput, (error) => {
           if (error) {
-            
             console.log(error);
           }
         });
