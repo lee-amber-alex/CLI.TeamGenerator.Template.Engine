@@ -34,10 +34,6 @@ Background image provided by [freepik.](https://www.freepik.com/)
 ## License
 This project is covered under the MIT License.
  
-## Tests
-```
-npm test
-``` 
 
 ## Questions
 - [Email](lee.amber.alex@gmail.com)
